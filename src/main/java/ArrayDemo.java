@@ -73,5 +73,13 @@ public class ArrayDemo {
 		System.out.println("0층의 방 개수: " + array[0].length);
 		System.out.println("1층의 방 개수: " + array[1].length);
 		System.out.println("2층의 방 개수: " + array[2].length);
+		
+		for(int i=0; i<array.length; i++) {
+			System.out.print(i + "층: ");
+			for(int j=0; j<array[i].length; j++) {
+				System.out.print(array[i][j] + ", ");
+			}
+			System.out.println();
+		}
 	}
 }
